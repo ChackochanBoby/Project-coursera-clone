@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/font/SourceSansPro-Regular.ttf) format('truetype');
+    font-family: "Source Sans Pro Bold";
+    src: url(/font/SourceSansPro-Bold.ttf) format('truetype');
+    font-family: "Source Sans Pro Semi Bold";
+    src: url(/font/SourceSansPro-SemiBold.ttf) format('truetype');
+    font-family: "Source Sans Pro Light";
+    src: url(/font/SourceSansPro-Light.ttf) format('truetype');
+}
+
+.logo {
+    width: 10rem;
+}
+
+.bluebutton {
+    font-family: "Source Sans Pro Semi Bold";
+    background-color: #0056D2;
+    color: white;
+}
+
+.searchbar {
+    width: 20rem;
+}
+
+.searchbutton {
+    background-color: #0056D2;
+    color: white;
+}
+
+.heading-font {
+    font-family: "Source Sans Pro Light";
+    font-size: 5rem;
+    color: black;
+    text-shadow: 2px 0 black;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
