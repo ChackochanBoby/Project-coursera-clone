@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar bg-black p-3">
+        <nav class="navbar bg-black p-3 navhide">
             <div class="container-fluid">
                 <ul class="nav d-flex flex-row gap-3">
                     <li class="nav-item">
@@ -33,44 +33,135 @@
                 </ul>
             </div>
         </nav>
-        <nav class="navbar py-1">
-            <div class="container-fluid p-3 d-flex align-items-center justify-content-between">
-                <div class="d-flex flex-row align-items-center gap-3">
-                    <a class="text-decoration-none fw-bolder" href="#"><img class="logo" src="./images/Coursera.svg"
-                            alt="Coursera"></a>
-                    <button type="button"
-                        class="btn d-flex align-items-center bluebutton border border-black">Explore</button>
-                    <form class="d-flex" role="search">
-                        <input class="form-control border border-black rounded-start-1 rounded-end-0 searchbar"
-                            type="search" placeholder="What do you want to Learn?" aria-label="Search">
-                        <button
-                            class="btn border border-black rounded-start-0 rounded-end-1 d-flex align-items-center px-2 searchbutton"
-                            type="submit"><span class="material-symbols-outlined">
+        <nav>
+            <div class="container-fluid p-3">
+                <div class="row">
+                    <div class="col-lg-5 d-flex justify-content-between justify-content-xl-start  gap-3 align-items-center width-1073">
+
+                        <button class="btn btn-light offcanvasvisibility" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample, #offcanvasBottom" aria-controls="offcanvasExample">
+                            <span class="material-symbols-outlined display-6">
+                                menu
+                            </span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel" style="width: 100%;">
+                            <div class="offcanvas-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-end align-items-center">
+                                            <a class="text-decoration-none fw-bolder me-2" href="#"><img class="logo"
+                                                    src="./images/Coursera.svg" alt="Coursera"></a>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end">
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Some text as placeholder. In real life you can have the elements you have chosen.
+                                    Like,
+                                    text, images, lists, etc.
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="text-decoration-none fw-bolder" href="#"><img class="logo" src="./images/Coursera.svg"
+                                alt="Coursera"></a>
+                        <button type="button"
+                            class="btn  align-items-center bluebutton border border-black navhide">Explore</button>
+                        <div class="navhide">
+                            <form class="d-flex" role="search">
+                                <input class="form-control border border-black rounded-start-1 rounded-end-0 searchbar"
+                                    type="search" placeholder="What do you want to Learn?" aria-label="Search">
+                                <button
+                                    class="btn border border-black rounded-start-0 rounded-end-1 d-flex align-items-center px-2 searchbutton"
+                                    type="submit"><span class="material-symbols-outlined">
+                                        search
+                                    </span></button>
+                            </form>
+                        </div>
+
+                        <button class="btn btn-light offcanvasvisibility" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><span
+                                class="material-symbols-outlined">
                                 search
                             </span></button>
-                    </form>
-                </div>
-                <div class="d-flex flex-row gap-3 align-items-center">
-                    <button class="btn">Online Degrees</button>
-                    <a href="..." class="nav-link">Find your New Career</a>
-                    <a href="..." class="nav-link" style="color: #0056d2;">Log in</a>
-                    <button class="btn bluebutton px-1">Join for Free</button>
+
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                            aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header p-0 pe-2 border border-2 border-black">
+                                <form class="d-flex" role="search" style="width: 100%;">
+                                    <button class="btn rounded-0 d-flex align-items-center px-2 searchbutton"
+                                        type="submit" style="height: 100%;"><span class="material-symbols-outlined">
+                                            search
+                                        </span></button>
+                                    <input class="form-control rounded-0 searchbar" type="search"
+                                        placeholder="What do you want to Learn?" aria-label="Search"
+                                        style="width: 100%;">
+                                </form>
+                                <button type="button" class="btn-close " data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-7 navhide justify-content-end align-items-center gap-3 ">
+                        <button class="btn">Online Degrees</button>
+                        <a href="..." class="nav-link">Find your New Career</a>
+                        <a href="..." class="nav-link" style="color: #0056d2;">Log in</a>
+                        <button class="btn bluebutton px-1">Join for Free</button>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+
+
         <section id="section-1">
-            <div class="container-lg">
-                <div class="row p-4">
-                    <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-                        <h1 class="heading-font font-weight-bolder">Learn without limits</h1>
-                        <p class="fs-5 text-start">Start, switch, or advance your career with more than 6,900 courses, Professional Certificates, and degrees from world-class universities and companies.</p>
+            <div class="container-xl">
+                <div class="row py-5">
+                    <div class="col-lg-7 py-5 d-flex align-items-center justify-content-center">
+                        <div style="width: 70%;">
+                            <h1 class="heading-font font-weight-bolder">Learn without limits</h1>
+                            <p class="fs-5 text-start">Start, switch, or advance your career with more than 6,900 courses,Professional Certificates, and degrees from world-class universities and companies.</p>
+                            <div class="d-flex gap-3 flex-row justify-content-center flex-wrap flex-sm-nowrap">
+                                <button class="btn bluebutton fs-5 rounded-0" style="width: 40%;min-width: 150px; height: 70px;">Join for
+                                    Free</button>
+                                <a class="btn fs-5 rounded-0 border-2 d-flex align-items-center justify-content-center"
+                                    href="" style="width: 60%;min-width: 150px;height: 70px;">Try Coursera for Business</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-end">
-                        <img src="./images/section-1.png" alt="" width="80%">
+                    <div class="col-lg-5 d-none d-lg-flex flex-column justify-content-center align-items-end">
+                        <img src="./images/section-1.png" alt="" width="100%">
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="section-2" style="background-color: #f5f5f5;" class="py-5">
+            <div class="container p-5">
+            <h2 class="h-4 text-center m-5"><a class="text-decoration-none" href="" style="color: black;">We collaborate with <span style="color: #0056d2;">325+ leading universities and companies</span></a>
+            </h2>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <div><a href=""><img src="./images/illinois-logo.png" alt=""></a></div>
+                <div><a href=""><img src="./images/duke-logo.png" alt=""></a></div>
+                <div><a href=""><img src="./images/Google-logo.png" alt=""></a></div>
+                <div><a href=""><img src="./images/MIchigan-logo.png" alt=""></a></div>
+                <div><a href=""><img src="./images/ibm-logo.png" alt=""></a></div>
+                <div><a href=""><img src="./images/imperial-logo.png" alt=""></a></div>
+                <div><a href=""><img src="./images/stanford-logo.png" alt=""></a></div>
+                <div><a href=""><img src="./images/penn-logo.png" alt=""></a></div>
+            </div>
             </div>
         </section>
     </main>

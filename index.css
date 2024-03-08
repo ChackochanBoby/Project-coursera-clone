@@ -8,13 +8,18 @@
     font-family: "Source Sans Pro Light";
     src: url(/font/SourceSansPro-Light.ttf) format('truetype');
 }
+body{
+    font-family: "Source Sans Pro Bold";
+}
 
 .logo {
     width: 10rem;
 }
 
 .bluebutton {
-    font-family: "Source Sans Pro Semi Bold";
+    font-family: "Source Sans Pro light";
+    font-weight: 900;
+    font-size: .8rem;
     background-color: #0056D2;
     color: white;
 }
@@ -32,7 +37,27 @@
     font-family: "Source Sans Pro Light";
     font-size: 5rem;
     color: black;
-    text-shadow: 2px 0 black;
-    letter-spacing: 2px;
+    text-shadow: 4px 0 black;
+    letter-spacing: 4px;
     font-weight: bold;
 }
+.navhide{
+    display: flex;
+}
+.offcanvasvisibility{
+    display: none;
+}
+
+@media only screen and (max-width: 1073px){
+    .navhide{
+        display: none;
+    }
+    .offcanvasvisibility{
+        display: block;
+    }
+    .width-1073{
+        width: 100%;
+    }
+}
+
+    
