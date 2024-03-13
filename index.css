@@ -47,7 +47,18 @@ body{
 .offcanvasvisibility{
     display: none;
 }
-
+.childno-1{
+    width: 40%;
+    border-radius: 5px;
+    background-color: grey;
+    height: 2rem;
+}
+.childno-3{
+    width: 90%;
+    border-radius: 5px;
+    background-color: #0056D2;
+    height: 2rem;
+}
 @media only screen and (max-width: 1073px){
     .navhide{
         display: none;
@@ -58,6 +69,13 @@ body{
     .width-1073{
         width: 100%;
     }
+    .childno-1{
+        width: 50%;
+    }
+    .childno-3{
+        width: 100%;
+    }
+    .childno-2,.childno-4{
+        display:none;
+    }
 }
-
-    
